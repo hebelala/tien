@@ -41,7 +41,7 @@ public class Me {
 		callMe().kill();
 	}
 
-	public static void reborn() {
+	public synchronized static void reborn() {
 		killMe();
 		newHelper();
 	}
