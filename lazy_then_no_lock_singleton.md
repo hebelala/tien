@@ -7,19 +7,19 @@
 优点：不必依赖类加载机制，完全由自己掌控。  
 缺点：即使已经初始化实例，仍然需要判空。
 
-[SingletonWithLock](../_code/SingletonWithLock.java ':include :type=code')
+[SingletonWithLock](_media/SingletonWithLock.java ':include :type=code')
 
 ## 1.2 利用类加载机制的写法
 优点：无需判空。  
 缺点：依赖类加载机制，无法完全由自己决定什么时候加载实例，比如有第三方包实现了热加载功能。
 
-[SingletonWithNoLock](../_code/SingletonWithNoLock.java ':include :type=code')
+[SingletonWithNoLock](_media/SingletonWithNoLock.java ':include :type=code')
 
 # 2 今天讨论的单例
 我是看Curator源码时发现的，就这个类[HandleHolder](https://github.com/apache/curator/blob/curator-2.0.0/curator-client/src/main/java/org/apache/curator/HandleHolder.java)。   
 借鉴它的思维，修复它的空指针问题，我的代码：
 
-[Me.java](../_code/Me.java ':include :type=code')
+[Me.java](_media/Me.java ':include :type=code')
 
 优点：懒加载，用锁来做到用一条线程来实例化，后续的获取实例是无锁、不需要判空的。
 
@@ -29,4 +29,4 @@
 <div style="text-align: right">----安妮宝贝《彼岸花》</div>
 
 # 3 来听听田小姐 :hearts:
-[原来你是我最想留住的幸运](../_media/IMG_0330.mp4 ':include')
+[原来你是我最想留住的幸运](_media/IMG_0330.mp4 ':include')
