@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="//unpkg.com/docsify/themes/pure.css">
+  <link rel="stylesheet" href="//unpkg.com/prismjs/themes/prism.css">
+  <link rel="shortcut icon" href="/_media/icon.jpg">
+</head>
+<body>
+  <div data-app id="main">发呆中。。。</div>
+  <script>
+    window.$docsify = {
+      el: '#main',
+      repo: 'https://github.com/hebelala/tien',
+      loadNavbar: true,
+      mergeNavbar: true,
+      loadSidebar: true,
+      auto2top: true,
+      logo: '/_media/icon.jpg',
+      autoHeader: true,
+      notFoundPage: true,
+      search: {
+        paths: 'auto',
+        placeholder: 'Type to search',
+        placeholder: {
+          '/zh-cn/': '搜索',
+          '/': 'Type to search'
+        },
+        noData: {
+          '/zh-cn/': '找不到结果',
+          '/': 'No Results'
+        },
+        depth: 6
+      }
+    }
+  </script>
+  <script src="//unpkg.com/vue/dist/vue.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-c.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-scala.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
+  <script src="//unpkg.com/prismjs/components/prism-typescript.min.js"></script>
+</body>
+</html>
