@@ -1,6 +1,6 @@
 public class SingletonWithLock {
 	
-	private static SingletonWithLock instance;
+	private volatile static SingletonWithLock instance;
 	
 	public static SingletonWithLock getInstance() {
 		if(instance == null) {

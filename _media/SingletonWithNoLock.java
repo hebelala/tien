@@ -1,11 +1,11 @@
 public class SingletonWithNoLock {
 
-	private static class holder {
+	private static class Holder {
 		static SingletonWithNoLock instance = new SingletonWithNoLock();
 	}
 
 	public static SingletonWithNoLock getInstance() {
-		return holder.instance;
+		return Holder.instance;
 	}
 
 }
