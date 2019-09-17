@@ -1,11 +1,11 @@
-
 # 1 回顾单例
 我们了解到单例写法，关注点一般有：是否懒加载、是否有锁、是否需要判空。  
 现在我们关注的都是懒加载的写法。主流的有两种写法，分别利用锁和类加载机制。
 
 ## 1.1 利用锁的写法
 优点：不必依赖类加载机制，完全由自己掌控。  
-缺点：即使已经初始化实例，仍然需要判空。
+缺点：即使已经初始化实例，仍然需要判空。  
+*注：下面的写法存在DCL(Double Check Lock)导致的happens-before问题。*
 
 [SingletonWithLock](_media/SingletonWithLock.java ':include :type=code')
 
