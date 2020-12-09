@@ -5,7 +5,6 @@
 ## 1.1 利用锁的写法
 优点：不必依赖类加载机制，完全由自己掌控。  
 缺点：即使已经初始化实例，仍然需要判空。  
-*注：下面的写法存在DCL(Double Check Lock)导致的happens-before问题。*
 
 [SingletonWithLock](_media/SingletonWithLock.java ':include :type=code')
 
