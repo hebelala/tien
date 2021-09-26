@@ -5,3 +5,5 @@
   * [sonar+jacoco](original/sonar_jacoco.md)
 
 * [开源贡献](contribution.md)
+
+* [联系我](contacts.md)
