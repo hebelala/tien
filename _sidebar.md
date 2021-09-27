@@ -6,4 +6,4 @@
 
 * [开源贡献](contribution.md)
 
-* [联系我](contacts.md)
+* [联系我吧](contacts.md)
